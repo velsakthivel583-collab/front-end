@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 65px;
+    background: #eeeef1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    color: rgb(63, 47, 47);
+    top: 0;
+    z-index: 100;
+    color: #b9c4d5;
+    text-decoration: none;
+    transition: 0.3s;
+    position: sticky;
+}
+
+.dropdown {
+    position: relative;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    z-index: 200;
+}
+
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background: #eee;
+    color: #b00020;
+    
+}
+
+/* Click to open */
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.logo span {
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.banking-section {
+    width: 100%;
+    padding: 80px 8%;
+    background-color: #f5f6f8;
+    box-sizing: border-box;
+}
+
+.banking-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.banking-content {
+    flex: 1.2;
+}
+
+.banking-tag {
+    color: #a51e35;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banking-content h1 {
+    font-size: 40px;
+    color: #222;
+    margin: 15px 0;
+}
+
+.banking-content h2 {
+    font-size: 23px;
+    color: #a51e35;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.banking-content h3 {
+    font-size: 20px;
+    color: #222;
+    margin: 20px 0 12px;
+}
+
+.banking-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.service-box {
+    border-left: 3px solid #a51e35;
+    padding: 5px 15px;
+    margin: 18px 0;
+    background-color: #fff;
+}
+
+.service-box h4 {
+    color: #222;
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.service-box p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.banking-btn {
+    background-color: #a51e35;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.banking-btn:hover {
+    background-color: #222;
+}
+
+.banking-image {
+    flex: 0.8;
+}
+
+.banking-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .banking-section {
+        padding: 40px 5%;
+    }
+
+    .banking-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .banking-content h1 {
+        font-size: 30px;
+    }
+
+    .banking-content h2 {
+        font-size: 20px;
+    }
+
+    .banking-image {
+        width: 100%;
+    }
+
+    .banking-image img {
+        height: 300px;
+    }
+}

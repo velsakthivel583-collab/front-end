@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #292d3a;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar a,
+.navbar button {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a:hover,
+.navbar button:hover {
+    color: #2858b5;
+}
+
+/* Dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+.dropdown a {
+    display: block;
+    padding: 22px;
+    color: #444;
+}
+
+.dropdown a:hover {
+    background: #f1f1f1;
+}
+
+.dropdown.show {
+    display: block;
+}
+.dropdown {
+    position: relative;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    z-index: 200;
+}
+
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background: #eee;
+    color: #b00020;
+    
+}
+
+
+/* Background section */
+.hero {
+    width: 100%;
+    height: 850px;
+    position: relative;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    
+}
+
+/* Left text box */
+.content {
+    width: 45%;
+    background: white;
+    padding: 30px;
+    color: #333;
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.call-btn {
+    padding: 18px 25px;
+    background: #2056b5;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.call-btn:hover {
+    background: #123c88;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    background: #174aa4;
+    padding: 18px 10px;
+    z-index: 2;
+}
+
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        min-height: 80px;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        height: 45px;
+    }
+
+    .content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 26px;
+    }
+
+    .hero {
+        height: 650px;
+        background-position: center;
+    }
+
+    .bottom-nav {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .bottom-nav a {
+        font-size: 11px;
+        text-align: center;
+    }
+}
+.staffing {
+    width: 100%;
+    padding: 80px 10%;
+    background-color: #f5f6f8;
+    
+}
+
+.staffing-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.staffing-content h1 {
+    color: #111;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.staffing-content h2 {
+    color: #a51e35;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.staffing-content p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.staffing-content button {
+    background-color: #a51e35;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.staffing-content button:hover {
+    background-color: #222;
+}
